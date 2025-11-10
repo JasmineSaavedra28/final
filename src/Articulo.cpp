@@ -15,6 +15,11 @@ double Articulo::getPrecio() const {
     return precio;
 }
 
+// Método para obtener el ID del artículo.
+int Articulo::getId() const {
+    return id;
+}
+
 // Método para obtener una cadena con la información del artículo.
 // Combina el nombre y el precio en un formato legible.
 std::string Articulo::getInfo() const {

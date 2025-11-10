@@ -15,6 +15,7 @@ public:
     // Métodos para obtener los datos del artículo.
     std::string getNombre() const;
     double getPrecio() const;
+    int getId() const; // Added getId() method
 
     // Devuelve una cadena con la información completa del artículo.
     std::string getInfo() const;
