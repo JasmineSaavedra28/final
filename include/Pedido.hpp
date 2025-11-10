@@ -1,3 +1,4 @@
+// Archivo de cabecera para la clase Pedido.
 #ifndef PEDIDO_HPP
 #define PEDIDO_HPP
 
@@ -17,12 +18,15 @@ private:
 
 public:
     // Constructor para crear un nuevo pedido.
+    // Asigna un ID, un proveedor, un empleado y los detalles de los artículos.
     Pedido(int id, Proveedor* pr, Empleado* emp, const std::vector<DetallePedido>& detalles);
 
     // Devuelve una cadena con la información completa del pedido.
+    // Incluye ID, proveedor, empleado y todos los detalles de los artículos.
     std::string getInfo() const;
 
     // Calcula y devuelve el costo total del pedido.
+    // Suma los subtotales de cada detalle del pedido.
     double getTotal() const;
 };
 
